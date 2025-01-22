@@ -1,9 +1,121 @@
-안녕 hello
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <!-- title은 문서 탭이름 설정하는 곳 -->
+    <title>디자인나스 코딩 수업</title>
+    <link
+      rel="shortcut icon"
+      href="https://web.dev/static/articles/building/an-adaptive-favicon/image/example-dark-theme-favico-6a6f6f67bc3e7.png"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        height: 5000px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>로고</h1>
+      <h2>디자인나스</h2>
+      <h3>디자인나스</h3>
+      <h4>디자인나스</h4>
+      <h5>디자인나스</h5>
+      <h6>디자인나스</h6>
 
+      <hr />
 
-진짜 잘가~~
+      <p>
+        Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing
+        elit.
+        <br />
+        Perferendis, cum!
+      </p>
 
-오늘 첫수업 끝낫당!!
+      <hr />
 
+      <!-- ordered list, 순사가 있는 글  -->
+      <ol>
+        <li>디자인나스</li>
+        <li>코딩수업</li>
+        <li>즐겁다</li>
+      </ol>
 
+      <hr />
 
+      <!-- ul태그는 순서가 없는 글을 쓸 때 사용, ol이나 ul이나 자식으로는 무조건 li태그만 쓸 수 있음!!공식임 -->
+      <ul>
+        <li>디자인나스</li>
+        <li>코딩수업</li>
+        <li>즐겁다</li>
+      </ul>
+
+      <hr />
+      <!-- src는 소스를 의미, ./를 입력하면, ../ 점을 2번 입력하면 상위 파일을 불러옴, alt는 이미지를 불러오는게 오류가 나면 뜸, 그리고 이부분은 시각 장애인들을 위해 적는 부분이기도 함. 따라서 최대한 자세히 써주는게 좋음-->
+      <img
+        width="100%"
+        src="./다운로드.png"
+        alt="귀여운 골댕이가 째려보는 사진"
+      />
+      <!-- width는 가로, hight는 세로, 단위는 px픽셀로 쓰거나 %로 쓰기도 함 -->
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/-dZE4ZZMvVE?si=hDOSxwW4IR6DzQRU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
+      <!-- 줄임말 abbr는 호버하면 자세한 설명을 볼 수 있음 -->
+      <abbr title="낄 때 끼고 빠질 때 빠져라">낄깔빠빠</abbr>
+
+      <!-- div, span 둘다 일반적으로 많이 쓰이는 태그 -->
+      <div>hello</div>
+      <span>hello</span>
+
+      <!-- 상단에 머릿말이 되는 부분 -->
+      <header>HEADER</header>
+
+      <footer>FOOTER</footer>
+
+      <!-- 섹션태그는 대신 h1-h6중에 하나를 반드시 자식으로 갖고있어야함 -->
+      <section>
+        music
+        <h2>title</h2>
+      </section>
+
+      <!-- GNB, LNB의 명칭을 갖은 부분을 코딩할때 네비코드를 사용함 -->
+      <nav>
+        <ul>
+          <li>회사소개</li>
+          <li>기업경영</li>
+          <li>연락처</li>
+        </ul>
+      </nav>
+
+      <article>ARTICLE</article>
+
+      <hr />
+
+      <a
+        href="https://www.naver.com"
+        title="해당 링크는 네이버 페이지로 이동합니다."
+      >
+        네이버
+      </a>
+      <hr />
+
+      <a
+        href="https://www.naver.com"
+        title="해당 링크는 네이버 페이지로 이동합니다."
+        ><img src="./다운로드.png" alt="귀여운 골댕이가 째려보는 사진"
+      /></a>
+    </main>
+  </body>
+</html>
