@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 각각 배경색상 넣어줌/ 인라인은 내 컨텐츠 내용만큼만 범위를 차지함, 블럭은 한 줄 전체를 차지 -->
+    <style>
+      span {
+        background-color: hotpink;
+        width: 100px;
+        height: 100px;
+      }
+
+      div {
+        display: inline-block;
+        background-color: dodgerblue;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 인라인: 가로배치, 예)strong, em, a, 폼 등등-->
+    <h2>
+      인라인 요소와 블럭 요소의 <a href="https://www.naver.com">차이점</a> 에
+      대해 학습니다.
+    </h2>
+    <hr />
+    <span>안녕</span>
+    <span>안녕</span>
+    <span>안녕</span>
+    <span>안녕</span>
+    <span>안녕</span>
+    <hr />
+
+    <!-- 블록: 세로배치, 예) h2~4등, li, ul태그 등등-->
+    <div>바보</div>
+    <div>바보</div>
+    <div>바보</div>
+    <div>바보</div>
+    <div>바보</div>
+
+    <div>바보</div>
+    <div>바보</div>
+    <div>바보</div>
+
+    <ol>
+      <li>너</li>
+      <li>너</li>
+      <li>너</li>
+    </ol>
+  </body>
+</html>
