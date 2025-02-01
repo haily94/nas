@@ -2,12 +2,12 @@
 
 
 
-const config = { 
-    semi:false,
-}
+// const config = { 
+//     semi:false,
+// }
 
 
-export default config
+// export default config
 
 
 
