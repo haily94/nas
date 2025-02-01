@@ -1,0 +1,32 @@
+
+/*프로필 적은 박스 크기 조정 */
+fieldset {
+    width: 370px; /* %단위는 부모 요소의 크기로 설정 */
+}
+
+
+h1{
+    background-color: pink;
+    text-align: center;
+
+}
+
+
+a:visited{
+    color: rgb(27, 223, 30);
+  }
+
+
+  div {
+    width: 400px;
+    height: auto;
+    background-color: skyblue;
+ 
+    text-align: center;
+  }
+
+
+  .class_box{
+    background-color: skyblue
+    ;
+  }
