@@ -1,0 +1,58 @@
+/* css에서 띄어쓰기 : ~안에 있는 */
+
+.list{
+    background-color: dodgerblue;
+}
+
+
+/* 자식 선택자, 리스트 클래스 안에 있는 자식 li 찾아봐 */
+/* :nth-child(1)= 첫번째 자식만 핑크배경 깔아줘 */
+/* 친자식 선택자(>) : list랑 li사이에 >기호(앵글브라켓)하나 넣어주면 됌*/
+.list > li:nth-child(1){
+    background-color: pink;
+}
+
+
+/* 리스트 클래스 안에 있는 모든 메뉴 클래스 찾기!, 메뉴 앞에도 .을 붙여줘야해
+.list .menu{
+    background-color: orange;
+} */
+
+
+/* 리스트 클래스 안에 있는 친자식(>) 메뉴 클래스 찾기
+.list > .menu{
+    background-color: orange;
+} */
+
+/* 리스트 클래스와 메뉴 클래스를 함께 가지고 있는 대상을 찾자 */
+/* 클래스 선택자 10점 + 10점 =20점 */
+.list.menu{
+    background-color: orange;
+}
+
+/* id 선택자가 100점, 따라서 클래스 선택자가 110개 모이면 id 선택보다 힘이 쎄짐 하지만 그렇게 쓰는 경우는 없음 */
+#depth{
+    background-color: greenyellow;
+}
+
+
+/* 클래스 10점, !important 넣어주면 점수가 어떻든 다 무시고 다 그걸로 적용됨, 거의 안써ㅋㅋ */
+.menu{
+    background-color: darkblue;
+}
+
+
+/* div태그이면서 menu클래스를 갖은 애한테만 이 색상을 넣어줘 */
+/* 태그 1점 + 클래스 10점 = 11점 */
+div.menu{
+    background-color: salmon;
+}
+
+div.menu:hover {
+    background-color: aquamarine;
+}
+
+
+
+
+

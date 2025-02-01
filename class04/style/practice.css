@@ -1,0 +1,26 @@
+
+.color_box{
+    background-color: #c53cc3;
+}
+
+/* 그냥 a만 쓰면 모든 a태그에 적용되기 때문에 컬러박스 안에 있는 친자식 a한테만 색을 넣겠다 */
+.color_box > a{
+    background-color: #e7d93f;
+}
+
+#color_box{
+    background-color: #1fb2cd;
+   
+    .bg{
+        background-color: #ff871c;
+    }
+
+    &:hover{
+        background-color: hotpink;
+    }
+}
+
+/* 이렇게 써도 되고, 안에 네스팅으로 넣어줘도 돼 */
+/* #color_box > .bg {
+    background-color: #ff871c;
+} */

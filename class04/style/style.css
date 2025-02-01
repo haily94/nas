@@ -1,0 +1,50 @@
+
+h1{color: brown;}
+
+
+/* 예외상황 : hmtl에서 태그 자체에 이미 속성이 부여된 경우에는 css에서 조정이 안됨 */
+.first  {font-size: 30px;
+color: orange;}
+
+.second {font-size: 20px;
+color: dodgerblue;}
+
+/* inherit = 상속, 따라서 이렇게 되면 부모 속성 따라감 */
+/* a{color: inherit;} */
+
+/* none으로 주면 링크입니다 밑줄 사라짐, underline으로 하면 밑줄생김, 즉 a태그는 언더라인이 기본값임 */
+a{text-decoration: none;}
+
+/* list=부모 */
+.list{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    list-style: none;
+    /* 왠만에해서는 부모의 높이를 이렇게 강제로 제한을 주지않음 */
+    height: 150px;
+    /* figma에서 클릭컨텐츠 기능 */
+    /* overflow: hidden; */
+    /* -y는 세로로만 스크롤 기능을 넣고싶을 때 */
+    overflow-y: scroll;
+
+}
+
+/* item = 자식 */
+.item01{
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+}
+
+.item02{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+.item03{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}

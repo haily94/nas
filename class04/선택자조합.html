@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/선택자조합.css" />
+  </head>
+  <body>
+    <h1>선택자 조합</h1>
+
+    <ul class="list">
+      <li>memu01</li>
+      <li class="menu">memu02</li>
+      <li>
+        menu03
+        <!-- 메뉴03에 하위 리스트를 또 넣고 싶다면, li안에 다시 ul태그를 다시 써야함 -->
+        <ul>
+            <!-- 클래스는 별명을 붙여주는 선택자인데, 별명을 여러개 붙일 수 있음 이때 띄어쓰기가 곧 ,같은 역할임 -->
+          <li class="list menu" id="depth">depth01</li>
+          <li class="menu">depth02</li>
+          <li>depth03</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="menu">another menu</div>
+
+
+
+
+  </body>
+</html>
+ 
