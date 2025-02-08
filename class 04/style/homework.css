@@ -1,0 +1,39 @@
+
+
+main{
+    background-color:lightgrey;
+}
+
+.menu{
+    color: dodgerblue;
+    .nav-item.special{
+        color: red;
+    }
+}
+
+/* 이때 동일 클래스 이름이 있어서 아이디를 씀 */
+/* border = 테두리, 선종류, 테두리 사이즈, 색상 */
+/* box-sixing = 박스 안에서 테두리가 생성되게끔  */
+.content{
+    #box-1{
+        background-color:yellow;
+        border: solid 1px blue;
+        box-sizing: border-box;
+    }
+}
+
+
+.selected{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+ul li:last-child{
+    text-decoration-line: underline;
+}
+
+/* 가상선택자 : */
+.footer-text:hover{
+    color: aqua;
+}
