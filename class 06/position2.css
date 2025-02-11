@@ -1,0 +1,63 @@
+
+
+body{
+    position: relative;
+}
+
+
+.white{
+    height: 1000px;
+}
+
+
+.green{
+    height: 400px;
+    width: 600px;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+
+
+.green .box1{
+    height: 50px;
+    width: 50px;
+    background-color: black; 
+    position: absolute;
+    top: 0;
+    left: 0;    
+}
+
+
+.green .box2{
+    height: 50px;
+    width: 50px;
+    background-color: black; 
+    position: absolute;
+    top: -50px;
+    right: -50px;  
+}
+
+
+.green .box3{
+    height: 200px;
+    width: 350px;
+    background-color: black; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+
+
+.gray{
+    height: 1000px;
+    background-color: gray;
+}
+
+
+
