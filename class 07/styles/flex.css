@@ -1,0 +1,81 @@
+
+
+ /* display는 가로배치를 주고싶은 부모에게 선언하는 것 따라서 컨테인에 디스플레이 플렉스를 주면 박스들이 가로 정렬로 바뀜 */
+  /* flex를 쓰면 플렉스 디렉션에서 row(가로), 콜롬(세로)로 선택해서 배치를 다시 자유롭게 설정 가능 */
+.container{
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    padding: 1rem;
+    
+    display: flex;
+    /* flex-direction: column; */
+    /* 저스티파이는 메인축 -> column이면 세로축이 메인 */
+    /* justify-content:center; */
+    /* justify-content:space-between; */
+    justify-content:center;
+    
+    /* 얼라인 아이템즈는 서브축 */
+    align-items: center;
+    
+    /* 사이의 일정한 간격을 주고싶을 때 */
+    gap: 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+
+    
+
+    .box{
+        width: 100px;
+        height: 100%;
+       
+       /* 밑에 색깔 강제로 다른걸로줘서 닷지블루 사라짐 */
+        background-color: dodgerblue;
+        border-radius: 4px;
+        
+        /* 박스사이징 줘서 보더 안에 들어오도록함 */
+        padding: 10px;
+        box-sizing: border-box;
+       
+        /* flex는 부모한테 주는거임, 그래서 숫자들 가운데로 오게 만드려면 숫자 텍스트를 감싸고있는 박스에다가 플렉스를 주고 위치 조정 */
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+
+        transition: all .5s;
+
+
+       3개의 자식(박스)들이 부모(컨테인)의 크기 안에서 1:1:1의 크기임
+        &:nth-child(1){
+            background-color: red;
+            flex: 1;
+            
+            
+            
+        }
+        &:nth-child(2){
+            background-color: orange;
+            flex: 1;
+        }
+        &:nth-child(3){
+            background-color: green;
+            flex: 1;
+        }
+
+        &:hover{
+            flex: 3;
+            background-color: aqua;
+        }
+  
+    }
+
+
+}
+
+
