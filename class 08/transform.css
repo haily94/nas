@@ -1,0 +1,82 @@
+.boxes{
+    width: 200px;
+    height: 200px;
+}
+
+/* 앤퍼센드는 위에 .box01를 대신 말하는거임 */
+ /* &&(and 연산자) 그리고*/
+ /* ||(or 연산자) 또는, 파이프라인이라고 부름 */
+
+
+ /* 사실 이동되는 애니메이션을 사용할 때 마진은 잘 사용하지 않음 */
+.box01{
+    background-color: red;
+    transition: all 1s;
+    margin-left: 0;
+
+    &:hover{
+        background-color: black;
+        margin-left: 30px;
+    }
+}
+
+
+/* 이동되는 애니메이션을 줄 때는 transform을 사용하는 것이 성능이 좋음 */
+.box02{
+    background-color: orange;
+    transition: all 0.3s;
+
+    /* 숫자에 양수와 음수로 적어서 방향을 바꿀 쑤 있음 */
+    &:hover{
+        /* transform: translateX(100px); */
+        /* transform: translateY(-100px); */
+        /* transform: translate(-5px, -5px); */
+        translate: -5px -5px;
+        box-shadow: 2px 7px 14px 7px #0000005e;
+    }
+
+}
+
+
+.box03{
+    background-color: dodgerblue;
+    /* height: 50px; */
+    /* transition: all 1s ease; */
+    transition: all 1s cubic-bezier(0.97, 0.35, 0.02, 0.89);
+
+    /* scale은 사이즈가 커질 때 사용, 1은 내 크기(곱하기 1) */
+    /* height를 쓰면 다른 애들을 좀 밀면서 커짐 */
+    &:hover{
+        /* transform: scale(2); */
+        scale:2;
+        /* height: 500px; */
+    }
+}
+
+
+
+/* 원래는 물체의 기준점이 정가운데임, 근데 transform-origin을 쓰면 기준점을 바꿔줄 수 있음
+    부모를 호버시키고 자식을 움직인다 */
+/* deg=디그리, 각도를 말함 */
+
+
+.box04{
+    border: 1px solid black;
+
+    &:hover .box{
+        rotate: 360deg;
+    }
+
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: hotpink;
+        transition: all 1s;
+        transform-origin: right top;
+    }
+}
+
+
+.box05{
+    background-color: green;
+}

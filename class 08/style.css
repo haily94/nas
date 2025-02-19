@@ -1,0 +1,52 @@
+
+
+.hamburger{
+    position: fixed;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+/* 활성클래스 */
+.offcanvas.active{
+    transform: translateX(0);
+}
+
+
+.offcanvas{
+    height: 100vh;
+    background-color: gray;
+    position: fixed;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 3rem;
+    transform: translateX(100%);
+    /* 100%=내 크기만큼 이동하는 것 */
+
+    transition: all 1s;
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+
+        il{
+
+
+
+        }
+
+    }
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
